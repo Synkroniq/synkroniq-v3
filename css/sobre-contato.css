@@ -1,5 +1,5 @@
 body {
-  background: url("../assets/img/bg-sobre.png") center/cover no-repeat fixed;
+  background: url("../assets/img/bg-sobre.jpeg") center/cover no-repeat fixed;
   color: var(--cor-texto-claro);
 }
 
@@ -72,4 +72,5 @@ body {
 .form-contato button:hover {
   background-color: #0056b3; /* pode ser ajustado para uma var secundária mais escura */
 }
+
 
