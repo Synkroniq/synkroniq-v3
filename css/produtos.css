@@ -3,18 +3,19 @@ body {
   color: var(--cor-texto-claro);
 }
 
-
-
 /* 🛍️ Seção de filtros */
 .filtros {
   padding: 2rem;
   text-align: center;
-  background-color: var(--cor-fundo-claro); /* antes: #f5f5f5 */
+  /* background-color: var(--cor-fundo-claro); */ /* antes: #f5f5f5 */
+  background: none;
 }
 
 .filtros h2 {
   margin-bottom: 1rem;
-  color: var(--cor-secundaria); /* antes: #007BFF */
+  color: var(--cor-primaria);
+  text-shadow: 1px 1px 4px #000;
+  /* color: var(--cor-secundaria); */ /* antes: #007BFF */
 }
 
 .filtros select {
@@ -23,6 +24,8 @@ body {
   border: 1px solid var(--cor-texto-suave); /* antes: #ccc */
   font-size: 1rem;
   cursor: pointer;
+  background-color: var(--cor-fundo-card);
+  color: var(--cor-texto-claro);
 }
 
 /* 📦 Lista de produtos */
@@ -83,4 +86,5 @@ body {
   background-color: var(--cor-botao-hover-bg); /* antes: #008866 */
   color: var(--cor-botao-hover-texto);
 }
+
 
