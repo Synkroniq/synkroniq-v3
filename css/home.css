@@ -1,3 +1,9 @@
+body {
+  background: url("../assets/img/bg-index.png") center/cover no-repeat fixed;
+  color: var(--cor-texto-claro);
+}
+
+
 /* 🎯 Hero visual */
 .hero {
   background: url("../assets/img/hero-bg.jpg") center/cover no-repeat;
@@ -226,3 +232,4 @@ button.expandir:hover {
   text-decoration: none;
   font-size: 1.3rem;
 }
+
