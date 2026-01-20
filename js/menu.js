@@ -1,7 +1,11 @@
-document.addEventListener("DOMContentLoaded", () => {
+// Função modular para inicializar o menu lateral
+function inicializarMenu() {
   const toggleBtn = document.querySelector(".menu-toggle");
   const menu = document.getElementById("mainMenu");
   const overlay = document.querySelector(".menu-overlay");
+
+  // Se não encontrar os elementos, não faz nada
+  if (!toggleBtn || !menu || !overlay) return;
 
   // 🔄 Alterna o menu lateral
   toggleBtn.addEventListener("click", (event) => {
@@ -19,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // 🖱️ Fecha o menu ao clicar fora dele (overlay)
+  // 🖱️ Fecha o menu ao clicar no overlay
   overlay.addEventListener("click", () => {
     menu.classList.remove("ativo");
     overlay.classList.remove("ativo");
@@ -33,4 +37,4 @@ document.addEventListener("DOMContentLoaded", () => {
       overlay.classList.remove("ativo");
     }
   });
-});
+}
