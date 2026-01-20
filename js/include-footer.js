@@ -28,11 +28,5 @@ document.addEventListener("DOMContentLoaded", () => {
           }
         });
       });
-
-      // Adicionar link de Informações Legais apenas na página produtos
-      if (window.location.pathname.includes("produtos")) {
-        document.getElementById("link-legais-produtos").innerHTML =
-          '| <a href="#" class="abrir-modal" data-modal="legais">Informações Legais</a>';
-      }
     });
 });
