@@ -1,3 +1,10 @@
+body {
+  background: url("../assets/img/bg-sobre.png") center/cover no-repeat fixed;
+  color: var(--cor-texto-claro);
+}
+
+
+
 /* 🏢 Seção Sobre */
 .sobre {
   padding: 3rem 2rem;
@@ -65,3 +72,4 @@
 .form-contato button:hover {
   background-color: #0056b3; /* pode ser ajustado para uma var secundária mais escura */
 }
+
