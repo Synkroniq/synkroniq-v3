@@ -3,14 +3,16 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--cor-fundo-card); /* antes: #222 */
-  color: var(--cor-texto-claro);           /* antes: white */
+  background-color: var(--cor-fundo-card); /* fundo escuro consistente */
+  color: var(--cor-texto-claro);
   padding: 1rem 2rem;
 }
 
 .logo {
   font-size: 1.5rem;
-  color: var(--cor-primaria); /* antes: #00FF99 */
+  color: var(--cor-primaria);
+  font-weight: bold;
+  text-shadow: 1px 1px 3px #000; /* destaque sobre fundo */
 }
 
 /* ☰ Botão menu */
@@ -18,9 +20,14 @@
   background: none;
   border: none;
   font-size: 2rem;
-  color: var(--cor-primaria); /* antes: #00FF99 */
+  color: var(--cor-primaria);
   cursor: pointer;
   z-index: 1100; /* acima do overlay */
+  transition: transform 0.3s ease;
+}
+
+.menu-toggle:hover {
+  transform: scale(1.1);
 }
 
 /* 📂 Menu lateral */
@@ -30,8 +37,8 @@
   left: -250px; /* escondido inicialmente */
   width: 250px;
   height: 100%;
-  background-color: var(--cor-fundo-card); /* antes: #222 */
-  color: var(--cor-texto-claro);           /* antes: white */
+  background-color: var(--cor-fundo-card);
+  color: var(--cor-texto-claro);
   display: flex;
   flex-direction: column;
   padding: 2rem 1rem;
@@ -40,13 +47,14 @@
 }
 
 .menu-lateral a {
-  color: var(--cor-primaria); /* antes: #00FF99 */
+  color: var(--cor-primaria);
   text-decoration: none;
   margin: 0.8rem 0;
+  transition: color 0.3s ease;
 }
 
 .menu-lateral a:hover {
-  color: var(--cor-texto-claro); /* antes: #fff */
+  color: var(--cor-texto-claro);
 }
 
 .menu-lateral.ativo {
@@ -74,19 +82,29 @@
 
 /* 🔚 Rodapé */
 .rodape {
-  background-color: var(--cor-rodape-bg);     /* antes: #222 */
-  color: var(--cor-rodape-texto);             /* antes: white */
+  background-color: var(--cor-rodape-bg);
+  color: var(--cor-rodape-texto);
   text-align: center;
   padding: 2rem;
 }
 
-.rodape .social a {
-  margin: 0 0.5rem;
-  color: var(--cor-rodape-link);              /* antes: #00FF99 */
-  text-decoration: none;
-  font-size: 1.3rem;
+.rodape .social {
+  margin-top: 1rem;
 }
 
-.rodape .social a:hover {
-  color: var(--cor-texto-claro);              /* antes: #fff */
+.rodape .social a {
+  margin: 0 0.5rem;
+  display: inline-block;
+}
+
+.rodape .social a img {
+  width: 28px;
+  height: 28px;
+  vertical-align: middle;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.rodape .social a img:hover {
+  transform: scale(1.2);
+  filter: brightness(1.3);
 }
