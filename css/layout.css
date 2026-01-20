@@ -20,13 +20,14 @@
   font-size: 2rem;
   color: #00FF99;
   cursor: pointer;
+  z-index: 1100; /* acima do overlay */
 }
 
 /* 📂 Menu lateral */
 .menu-lateral {
   position: fixed;
   top: 0;
-  left: -250px; /* escondido */
+  left: -250px; /* escondido inicialmente */
   width: 250px;
   height: 100%;
   background-color: #222;
@@ -35,7 +36,7 @@
   flex-direction: column;
   padding: 2rem 1rem;
   transition: left 0.3s ease;
-  z-index: 1000;
+  z-index: 1200; /* acima do overlay */
 }
 
 .menu-lateral a {
@@ -44,8 +45,31 @@
   margin: 0.8rem 0;
 }
 
+.menu-lateral a:hover {
+  color: #fff;
+}
+
 .menu-lateral.ativo {
   left: 0; /* aparece deslizando */
+}
+
+/* 🌑 Overlay (fundo escuro quando menu abre) */
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+  z-index: 1000;
+}
+
+.menu-overlay.ativo {
+  opacity: 1;
+  visibility: visible;
 }
 
 /* 🔚 Rodapé */
@@ -63,4 +87,6 @@
   font-size: 1.3rem;
 }
 
-
+.rodape .social a:hover {
+  color: #fff;
+}
