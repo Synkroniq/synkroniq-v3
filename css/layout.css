@@ -3,14 +3,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #222;
-  color: white;
+  background-color: var(--cor-fundo-card); /* antes: #222 */
+  color: var(--cor-texto-claro);           /* antes: white */
   padding: 1rem 2rem;
 }
 
 .logo {
   font-size: 1.5rem;
-  color: #00FF99;
+  color: var(--cor-primaria); /* antes: #00FF99 */
 }
 
 /* ☰ Botão menu */
@@ -18,7 +18,7 @@
   background: none;
   border: none;
   font-size: 2rem;
-  color: #00FF99;
+  color: var(--cor-primaria); /* antes: #00FF99 */
   cursor: pointer;
   z-index: 1100; /* acima do overlay */
 }
@@ -30,8 +30,8 @@
   left: -250px; /* escondido inicialmente */
   width: 250px;
   height: 100%;
-  background-color: #222;
-  color: white;
+  background-color: var(--cor-fundo-card); /* antes: #222 */
+  color: var(--cor-texto-claro);           /* antes: white */
   display: flex;
   flex-direction: column;
   padding: 2rem 1rem;
@@ -40,13 +40,13 @@
 }
 
 .menu-lateral a {
-  color: #00FF99;
+  color: var(--cor-primaria); /* antes: #00FF99 */
   text-decoration: none;
   margin: 0.8rem 0;
 }
 
 .menu-lateral a:hover {
-  color: #fff;
+  color: var(--cor-texto-claro); /* antes: #fff */
 }
 
 .menu-lateral.ativo {
@@ -74,19 +74,19 @@
 
 /* 🔚 Rodapé */
 .rodape {
-  background-color: #222;
-  color: white;
+  background-color: var(--cor-rodape-bg);     /* antes: #222 */
+  color: var(--cor-rodape-texto);             /* antes: white */
   text-align: center;
   padding: 2rem;
 }
 
 .rodape .social a {
   margin: 0 0.5rem;
-  color: #00FF99;
+  color: var(--cor-rodape-link);              /* antes: #00FF99 */
   text-decoration: none;
   font-size: 1.3rem;
 }
 
 .rodape .social a:hover {
-  color: #fff;
+  color: var(--cor-texto-claro);              /* antes: #fff */
 }
