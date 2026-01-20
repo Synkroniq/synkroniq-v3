@@ -1,26 +1,47 @@
 /* 🎯 Hero visual */
 .hero {
   background: url("../assets/img/hero-bg.jpg") center/cover no-repeat;
-  color: white;
+  position: relative;
   text-align: center;
   padding: 6rem 2rem;
+  color: #fff;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.55); /* overlay escuro para contraste */
+}
+
+.hero-texto {
+  position: relative;
+  z-index: 1;
 }
 
 .hero h2 {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   margin-bottom: 1rem;
+  text-shadow: 2px 2px 6px #000; /* sombra para destacar */
 }
 
 .hero p {
-  font-size: 1.2rem;
-  color: #ddd;
+  font-size: 1.3rem;
+  color: #eee;
+  text-shadow: 1px 1px 4px #000;
 }
 
 /* 🛠️ Seção de serviços */
 .servicos {
   padding: 3rem 2rem;
-  background-color: #f9f9f9;
+  background-color: #111; /* fundo escuro */
   text-align: center;
+}
+
+.servicos h2 {
+  color: #00FF99;
+  text-shadow: 1px 1px 4px #000;
 }
 
 .grid-servicos {
@@ -31,13 +52,14 @@
 }
 
 .card-servico {
-  background: white;
+  background: #222;
   border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
   padding: 1.5rem;
-  opacity: 0; /* inicia invisível para animar */
+  opacity: 0;
   transform: translateY(20px);
   transition: all 0.6s ease;
+  color: #eee;
 }
 
 .card-servico img {
@@ -49,19 +71,24 @@
 }
 
 .card-servico h3 {
-  color: #007BFF;
+  color: #00BFFF; /* azul mais vibrante */
   margin-bottom: 0.5rem;
 }
 
 .card-servico p {
-  color: #555;
+  color: #ccc;
 }
 
 /* ⚡ Upgrades */
 .upgrades {
   padding: 3rem 2rem;
-  background-color: #fff;
+  background-color: #181818;
   text-align: center;
+}
+
+.upgrades h2 {
+  color: #FFD700; /* dourado para destaque */
+  text-shadow: 1px 1px 4px #000;
 }
 
 .grid-upgrades {
@@ -72,25 +99,31 @@
 }
 
 .card-upgrade {
-  background: #f5f5f5;
+  background: #222;
   border-radius: 8px;
   padding: 1.5rem;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
   opacity: 0;
   transform: translateY(-20px);
   transition: all 0.6s ease;
+  color: #eee;
 }
 
 .card-upgrade h3 {
-  color: #00AA88;
+  color: #00FF99;
   margin-bottom: 0.5rem;
 }
 
 /* 📚 Curiosidades */
 .curiosidades {
   padding: 3rem 2rem;
-  background-color: #f9f9f9;
+  background-color: #111;
   text-align: center;
+}
+
+.curiosidades h2 {
+  color: #FF6600;
+  text-shadow: 1px 1px 4px #000;
 }
 
 .grid-curiosidades {
@@ -101,12 +134,13 @@
 }
 
 .card-curiosidade {
-  background: white;
+  background: #222;
   border-radius: 8px;
   padding: 1.5rem;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
   opacity: 0;
   transition: all 0.6s ease;
+  color: #eee;
 }
 
 .card-curiosidade h3 {
@@ -117,11 +151,28 @@
 .card-curiosidade .conteudo-expandido {
   display: none;
   margin-top: 1rem;
-  color: #333;
+  color: #ddd;
 }
 
 .card-curiosidade.expandido .conteudo-expandido {
   display: block;
+}
+
+/* Botões */
+button.expandir {
+  background: #00FF99;
+  color: #111;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+button.expandir:hover {
+  background: #00cc77;
+  color: #fff;
 }
 
 /* ✨ Animações de entrada */
