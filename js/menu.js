@@ -3,7 +3,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const menu = document.getElementById("mainMenu");
 
   // 🔄 Alterna o menu lateral
-  toggleBtn.addEventListener("click", () => {
+  toggleBtn.addEventListener("click", (event) => {
+    event.stopPropagation(); // evita que o clique no botão seja capturado pelo listener global
     menu.classList.toggle("ativo");
   });
 
@@ -13,5 +14,13 @@ document.addEventListener("DOMContentLoaded", () => {
     link.addEventListener("click", () => {
       menu.classList.remove("ativo");
     });
+  });
+
+  // 🖱️ Fecha o menu ao clicar fora dele
+  document.addEventListener("click", (event) => {
+    const clicouFora = !menu.contains(event.target) && !toggleBtn.contains(event.target);
+    if (menu.classList.contains("ativo") && clicouFora) {
+      menu.classList.remove("ativo");
+    }
   });
 });
