@@ -88,18 +88,31 @@
 }
 
 /* 🔚 Rodapé */
-.rodape {
+/*.rodape {
   background: linear-gradient( 
     to bottom,
   rgba(0, 0, 0, 0.85), /* preto 85% no topo */ 
-  rgba(0, 0, 0, 0.65) /* preto 65% mais suave embaixo */ 
-  );
+ /* rgba(0, 0, 0, 0.65) /* preto 65% mais suave embaixo */ 
+  /* );
   color: var(--cor-rodape-texto);
   padding: 1rem 2rem; 
   position: relative; 
   text-align: center;
   z-index: 1000; /* garante que fiquem acima da imagem do body */
+
+.rodape {
+  background: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 0.25), /* branco 25% embaixo */
+    rgba(255, 255, 255, 0.10)  /* branco 10% em cima */
+  );
+  color: var(--cor-rodape-texto);
+  padding: 1rem 2rem;
+  position: relative;
+  text-align: center;
+  z-index: 1000; /* fica acima da imagem do body */
 }
+
 
 .rodape .social {
   margin-top: 1rem;
@@ -196,4 +209,5 @@
 .modal .fechar:hover { 
   background: #b71c1c; /* vermelho mais escuro no hover */ 
 }
+
 
