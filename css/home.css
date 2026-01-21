@@ -4,6 +4,19 @@ body {
   color: var(--cor-texto-claro);
 }
 
+.titulo-neon {
+  color: #ffffff; /* branco puro */
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #00ffcc,
+    0 0 30px #00ffcc,
+    0 0 40px #00ffcc,
+    0 0 55px #00ffcc,
+    0 0 75px #00ffcc;
+}
+
+
 /* 🎯 Hero visual */
 .hero {
   position: relative;
@@ -221,3 +234,4 @@ button.expandir:hover {
   text-decoration: none;
   font-size: 1.3rem;
 }
+
