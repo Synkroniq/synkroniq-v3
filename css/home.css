@@ -17,7 +17,9 @@ body {
     90deg,
     #4facfe,   /* azul claro */
     #00f2fe,   /* azul aqua vibrante */
+    #c0c0c0,   /* prata */
     #1e90ff,   /* azul padrão */
+    #dcdcdc,   /* prata mais claro */
     #87cefa    /* azul céu bem claro */
   );
   background-size: 300% 300%; /* aumenta área para animação */
@@ -267,6 +269,7 @@ button.expandir:hover {
   text-decoration: none;
   font-size: 1.3rem;
 }
+
 
 
 
