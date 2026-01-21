@@ -88,23 +88,11 @@
 }
 
 /* 🔚 Rodapé */
-/*.rodape {
-  background: linear-gradient( 
-    to bottom,
-  rgba(0, 0, 0, 0.85), /* preto 85% no topo */ 
- /* rgba(0, 0, 0, 0.65) /* preto 65% mais suave embaixo */ 
-  /* );
-  color: var(--cor-rodape-texto);
-  padding: 1rem 2rem; 
-  position: relative; 
-  text-align: center;
-  z-index: 1000; /* garante que fiquem acima da imagem do body */
-
 .rodape {
   background: linear-gradient(
     to top,
-    rgba(255, 255, 255, 0.25), /* branco 25% embaixo */
-    rgba(255, 255, 255, 0.10)  /* branco 10% em cima */
+    rgba(255, 255, 255, 0.12), /* branco 12% embaixo */
+    rgba(255, 255, 255, 0.05)  /* branco 5% em cima */
   );
   color: var(--cor-rodape-texto);
   padding: 1rem 2rem;
@@ -209,5 +197,6 @@
 .modal .fechar:hover { 
   background: #b71c1c; /* vermelho mais escuro no hover */ 
 }
+
 
 
