@@ -2,8 +2,8 @@
 .cabecalho {
   background: linear-gradient( 
     to bottom,
-  rgba(0, 0, 0, 0.85), /* preto 85% no topo */ 
-  rgba(0, 0, 0, 0.65) /* preto 65% mais suave embaixo */ 
+    rgba(0, 0, 0, 0.85), /* preto 85% no topo */ 
+    rgba(0, 0, 0, 0.65)  /* preto 65% mais suave embaixo */ 
   );
   display: flex;
   align-items: center;
@@ -78,6 +78,7 @@
   background: rgba(0,0,0,0.6);
   opacity: 0;
   visibility: hidden;
+  pointer-events: none;   /* não bloqueia cliques quando invisível */
   transition: opacity 0.3s ease;
   z-index: 1000;
 }
@@ -85,6 +86,7 @@
 .menu-overlay.ativo {
   opacity: 1;
   visibility: visible;
+  pointer-events: auto;   /* só bloqueia cliques quando ativo */
 }
 
 /* 🔚 Rodapé */
@@ -100,7 +102,6 @@
   text-align: center;
   z-index: 1000; /* fica acima da imagem do body */
 }
-
 
 .rodape .social {
   margin-top: 1rem;
@@ -197,7 +198,3 @@
 .modal .fechar:hover { 
   background: #b71c1c; /* vermelho mais escuro no hover */ 
 }
-
-
-
-
