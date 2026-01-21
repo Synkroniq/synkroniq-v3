@@ -4,6 +4,7 @@ body {
   color: var(--cor-texto-claro);
 }
 
+/* Titulo Logo */
 .titulo-neon {
   color: #ffffff; /* branco puro */
   text-shadow:
@@ -11,46 +12,6 @@ body {
     0 0 4px #00ffcc,
     0 0 8px #00ffcc;
 }
-
-.logo-azul {
-  background: linear-gradient(
-    90deg,
-    #4facfe,   /* azul claro */
-    #00f2fe,   /* azul aqua vibrante */
-    #c0c0c0,   /* prata */
-    #1e90ff,   /* azul padrão */
-    #dcdcdc,   /* prata mais claro */
-    #87cefa    /* azul céu bem claro */
-  );
-  background-size: 300% 300%; /* aumenta área para animação */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: bold;
-  animation: brilho-metal 6s linear infinite;
-  text-shadow: 0 0 10px rgba(79,172,254,0.6); /* brilho suave */
-}
-
-@keyframes brilho-metal {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-.logo-verde {
-  color: var(--cor-primaria); /* verde neon já definido */
-  text-shadow:
-    0 0 5px var(--cor-primaria),
-    0 0 10px #00ff99,
-    0 0 20px #00ffcc;
-  font-weight: bold;
-}
-
 
 /* 🎯 Hero visual */
 .hero {
@@ -269,6 +230,7 @@ button.expandir:hover {
   text-decoration: none;
   font-size: 1.3rem;
 }
+
 
 
 
