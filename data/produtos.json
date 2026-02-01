@@ -1,23 +1,130 @@
 [
   {
-    "nome": "Firewall Avançado",
-    "descricao": "Proteção completa para sua rede corporativa.",
-    "categoria": "seguranca",
-    "imagem": "assets/img/firewall.jpg",
-    "link": "https://afiliado.com/firewall"
+    "titulo": "SSD Kingston 480GB",
+    "descricao": "Velocidade e desempenho para seu PC.",
+    "imagem": "assets/img/ssd-kingston.png",
+    "link": "https://afiliado.com/ssd-kingston",
+    "botao": "Comprar",
+    "categoria": "Armazenamento e SSDs"
   },
   {
-    "nome": "Laptop Ultrafino",
-    "descricao": "Performance e mobilidade para profissionais criativos.",
-    "categoria": "tecnologia",
-    "imagem": "assets/img/laptop.jpg",
-    "link": "https://afiliado.com/laptop"
+    "titulo": "HD Externo Seagate 2TB",
+    "descricao": "Armazene seus arquivos com segurança.",
+    "imagem": "assets/img/hd-seagate.png",
+    "link": "https://afiliado.com/hd-seagate",
+    "botao": "Comprar",
+    "categoria": "Armazenamento e SSDs"
   },
   {
-    "nome": "Pacote de Ícones Premium",
-    "descricao": "Design moderno para seus projetos digitais.",
-    "categoria": "design",
-    "imagem": "assets/img/icones.jpg",
-    "link": "https://afiliado.com/icones"
+    "titulo": "Headset Gamer HyperX",
+    "descricao": "Som imersivo com microfone de alta qualidade.",
+    "imagem": "assets/img/headset-hyperx.png",
+    "link": "https://afiliado.com/hyperx-headset",
+    "botao": "Comprar",
+    "categoria": "Periféricos Gamer"
+  },
+  {
+    "titulo": "Mouse Gamer Logitech G502",
+    "descricao": "Precisão e performance para jogos competitivos.",
+    "imagem": "assets/img/mouse-logitech.png",
+    "link": "https://afiliado.com/logitech-g502",
+    "botao": "Comprar",
+    "categoria": "Periféricos Gamer"
+  },
+  {
+    "titulo": "Xbox Series S",
+    "descricao": "Console compacto e poderoso.",
+    "imagem": "assets/img/xbox-series-s.png",
+    "link": "https://afiliado.com/xbox-series-s",
+    "botao": "Comprar",
+    "categoria": "Consoles e Acessórios"
+  },
+  {
+    "titulo": "Controle DualSense PS5",
+    "descricao": "Experiência imersiva com feedback háptico.",
+    "imagem": "assets/img/dualsense.png",
+    "link": "https://afiliado.com/dualsense-ps5",
+    "botao": "Comprar",
+    "categoria": "Consoles e Acessórios"
+  },
+  {
+    "titulo": "Placa de Vídeo RTX 4060",
+    "descricao": "Desempenho incrível para games e criação.",
+    "imagem": "assets/img/rtx4060.png",
+    "link": "https://afiliado.com/rtx4060",
+    "botao": "Comprar",
+    "categoria": "Hardware em Destaque"
+  },
+  {
+    "titulo": "Processador Intel i7 12700K",
+    "descricao": "Potência para multitarefas e jogos pesados.",
+    "imagem": "assets/img/intel-i7.png",
+    "link": "https://afiliado.com/intel-i7",
+    "botao": "Comprar",
+    "categoria": "Hardware em Destaque"
+  },
+  {
+    "titulo": "Monitor Gamer LG Ultrawide",
+    "descricao": "Mais espaço e imersão para produtividade e jogos.",
+    "imagem": "assets/img/monitor-lg.png",
+    "link": "https://afiliado.com/monitor-lg",
+    "botao": "Comprar",
+    "categoria": "Monitores e Displays"
+  },
+  {
+    "titulo": "Suporte Ajustável para Monitor",
+    "descricao": "Ergonomia e conforto para sua estação de trabalho.",
+    "imagem": "assets/img/suporte-monitor.png",
+    "link": "https://afiliado.com/suporte-monitor",
+    "botao": "Comprar",
+    "categoria": "Monitores e Displays"
+  },
+  {
+    "titulo": "Roteador TP-Link AX1800",
+    "descricao": "Wi-Fi 6 para máxima velocidade e estabilidade.",
+    "imagem": "assets/img/roteador-tplink.png",
+    "link": "https://afiliado.com/tplink-ax1800",
+    "botao": "Comprar",
+    "categoria": "Redes e Conectividade"
+  },
+  {
+    "titulo": "Adaptador USB Wi-Fi",
+    "descricao": "Conectividade rápida para qualquer PC.",
+    "imagem": "assets/img/adaptador-wifi.png",
+    "link": "https://afiliado.com/adaptador-wifi",
+    "botao": "Comprar",
+    "categoria": "Redes e Conectividade"
+  },
+  {
+    "titulo": "Smartphone Samsung Galaxy S22",
+    "descricao": "Tecnologia de ponta com câmera avançada.",
+    "imagem": "assets/img/galaxy-s22.png",
+    "link": "https://afiliado.com/galaxy-s22",
+    "botao": "Comprar",
+    "categoria": "Smartphones e Tablets"
+  },
+  {
+    "titulo": "Tablet Apple iPad Air",
+    "descricao": "Performance e versatilidade para trabalho e lazer.",
+    "imagem": "assets/img/ipad-air.png",
+    "link": "https://afiliado.com/ipad-air",
+    "botao": "Comprar",
+    "categoria": "Smartphones e Tablets"
+  },
+  {
+    "titulo": "Caixa de Som JBL Flip 6",
+    "descricao": "Som potente e portátil para qualquer ocasião.",
+    "imagem": "assets/img/jbl-flip6.png",
+    "link": "https://afiliado.com/jbl-flip6",
+    "botao": "Comprar",
+    "categoria": "Áudio e Som"
+  },
+  {
+    "titulo": "Fone Bluetooth Sony WH-1000XM4",
+    "descricao": "Cancelamento de ruído líder no mercado.",
+    "imagem": "assets/img/sony-wh1000xm4.png",
+    "link": "https://afiliado.com/sony-wh1000xm4",
+    "botao": "Comprar",
+    "categoria": "Áudio e Som"
   }
 ]
