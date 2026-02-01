@@ -1,13 +1,14 @@
+/* 🌐 Fundo geral da página */
 body {
   background: url("../assets/img/bg-produtos.png") center/cover no-repeat fixed;
   color: var(--cor-texto-claro);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* 🛍️ Seção de filtros */
 .filtros {
   padding: 2rem;
   text-align: center;
-  /* background-color: var(--cor-fundo-claro); */ /* antes: #f5f5f5 */
   background: none;
 }
 
@@ -15,17 +16,47 @@ body {
   margin-bottom: 1rem;
   color: var(--cor-primaria);
   text-shadow: 1px 1px 4px #000;
-  /* color: var(--cor-secundaria); */ /* antes: #007BFF */
 }
 
+/* 🔎 Campo de busca */
+.busca {
+  margin-bottom: 1rem;
+}
+
+.busca input {
+  width: 60%;
+  max-width: 400px;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  border: 1px solid var(--cor-texto-suave);
+  font-size: 1rem;
+  background-color: var(--cor-fundo-card);
+  color: var(--cor-texto-claro);
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.busca input:focus {
+  outline: none;
+  border: 1px solid var(--cor-primaria);
+  box-shadow: 0 0 6px var(--cor-primaria);
+}
+
+/* 🎯 Select de categorias */
 .filtros select {
   padding: 0.5rem 1rem;
   border-radius: 6px;
-  border: 1px solid var(--cor-texto-suave); /* antes: #ccc */
+  border: 1px solid var(--cor-texto-suave);
   font-size: 1rem;
   cursor: pointer;
   background-color: var(--cor-fundo-card);
   color: var(--cor-texto-claro);
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.filtros select:focus {
+  outline: none;
+  border: 1px solid var(--cor-primaria);
+  box-shadow: 0 0 6px var(--cor-primaria);
 }
 
 /* 📦 Lista de produtos */
@@ -36,8 +67,9 @@ body {
   padding: 3rem 2rem;
 }
 
+/* 🖼️ Card de produto */
 .card-produto {
-  background: var(--cor-fundo-card); /* antes: white */
+  background: var(--cor-fundo-card);
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
   padding: 1.5rem;
@@ -60,12 +92,12 @@ body {
 }
 
 .card-produto h3 {
-  color: var(--cor-texto-escuro); /* antes: #333 */
+  color: var(--cor-secundaria);
   margin-bottom: 0.5rem;
 }
 
 .card-produto p {
-  color: var(--cor-texto-suave); /* antes: #666 */
+  color: var(--cor-texto-suave);
   font-size: 0.95rem;
   margin-bottom: 1rem;
 }
@@ -73,18 +105,29 @@ body {
 /* 🎯 Botão de compra */
 .btn-comprar {
   display: inline-block;
-  background-color: var(--cor-primaria); /* antes: #00AA88 */
+  background-color: var(--cor-primaria);
   color: var(--cor-botao-texto);
   padding: 0.6rem 1.2rem;
   border-radius: 6px;
   text-decoration: none;
   font-weight: bold;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .btn-comprar:hover {
-  background-color: var(--cor-botao-hover-bg); /* antes: #008866 */
+  background-color: var(--cor-botao-hover-bg);
   color: var(--cor-botao-hover-texto);
+  transform: scale(1.05);
 }
 
+/* 📱 Responsividade */
+@media (max-width: 768px) {
+  .busca input {
+    width: 90%;
+  }
 
+  .lista-produtos {
+    grid-template-columns: 1fr;
+    padding: 2rem 1rem;
+  }
+}
